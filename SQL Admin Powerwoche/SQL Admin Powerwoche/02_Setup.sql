@@ -68,3 +68,28 @@ Setup schlägt für SQL einen max Speicher vor, um im worst Case nicht den gesamte
 --werden
 
 
+hv-sql1 -- Standardinstanz (1433)
+schulung\Administrator
+ppedv2023!
+
+ca 6 GB
+4 Kerne
+C:\
+
+
+MAXDOP: 4
+RAM: MAX 3,8 GB
+Tempdb: Datendateien 4
+MDF und ldf.. getrennt
+Backup anderer Ort
+
+Auth
+
+
+
+
+
+
+
+
+
