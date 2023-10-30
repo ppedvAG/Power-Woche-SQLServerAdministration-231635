@@ -1,12 +1,4 @@
 /*
-
-Diagramm
-Visualsierung der Tabellen und SIchten und deren ZUsammenhänge
-(inkl Datentyp, NULL oder NOT NULL , PK und FK Beziehungen)
-
-Berichte pro DB--> Standardberichte...Oberste Tabellen
-
-
 DB Design
 
 Normalisierung
