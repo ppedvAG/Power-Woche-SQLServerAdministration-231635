@@ -11,7 +11,7 @@
 
 --11:31 problem .. wann ... 11:29 (9Uhr)
 --Workaround: unter einen anderen Namen restoren
---und anschlissend per TSQL irgendwie die Daten korrigieren in der OrgDB
+--und anschliessend per TSQL irgendwie die Daten korrigieren in der OrgDB
 
 --V letzte D und alle nachfolgenden Ts
 
@@ -98,7 +98,7 @@ CREATE DATABASE [KursDB] ON
  FOR ATTACH
 GO
 
---resore aus Backup auf anderen server
+--restore aus Backup auf anderen server
 USE [master]
 RESTORE DATABASE [Kurs2014DB] FROM  DISK = N'D:\_HRBACKUP\Kurs2014DB.bak' WITH  FILE = 1,  MOVE N'Kurs2014DB' TO N'D:\_HRDB\Kurs2014DB.mdf',  MOVE N'Kurs2014DB_log' TO N'D:\_HRDB\Kurs2014DB_log.ldf',  NORECOVERY,  NOUNLOAD,  STATS = 5
 RESTORE DATABASE [Kurs2014DB] FROM  DISK = N'D:\_HRBACKUP\Kurs2014DB.bak' WITH  FILE = 9,  NORECOVERY,  NOUNLOAD,  STATS = 5
