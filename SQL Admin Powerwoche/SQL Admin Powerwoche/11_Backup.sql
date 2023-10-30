@@ -113,7 +113,7 @@ und sichert unseren Restore
 Wir machen das T so häufig wie der max Datenverlust sein darf... zb 15min
 
 Nur mit Hilfe der T Sicherung ist ein Sekundengenauer Restore möglich
-Allerdings muss das Wiederherstellungsm iodel auf Voll gesetzt sein.
+Allerdings muss das Wiederherstellungsmodel auf Voll gesetzt sein.
 
 
 
@@ -144,15 +144,50 @@ GO
 
 ---V TTT D TTT D TTT
 
---Fall 6:
+
+
+--Lösungen zu den Fällen
+1. Logfile defekt
+   Datendatei ist defekt	
+   --DB anfügen und mind die mdf angeben...
+   --ein fehlendes Logfile kann durch ein neues "ersetzt" werden
+
+
+2. HDD mit DB ist weg/defekt...
+	--Restore aus Backup
+
+3. jemand manipuliert versehentlich Daten
+	--Restore als DB mit anderen Namen
+	--Vorsicht: Dateinamen anpassen
+			--  kein Fragmentsicherung
+
+4. SQL Server ist defekt, aber die HDD sind noch da..
+	--DB anfügen auf anderen Server
+
+
+
+5. Wenn man weiss, dass gleich was passieren kann..?
+	Bei SP oder UP Installationen 
+	wird oft auf ein Backup hingewiesen
+
+	-->Snapshot
+
+6: DB Defekt.. korrupt (fehlerverdächtig)-- Reperatur oder wenn notwendig restore
+--Restore der DB 
+--DB ersetzen / überschreiben / Benutzer von der DB trennen
 --DB über das Menü restoren...
+-- Protokollfragment erstellen lassen und gewünschten Zeitpunkt wählen
+
+
+
 USE [master]
-RESTORE DATABASE [Kurs2014DB] FROM  DISK = N'D:\_BACKUP\Kurs2014DB.bak' WITH  FILE = 1, ,  NORECOVERY,  NOUNLOAD,  STATS = 5
-RESTORE DATABASE [Kurs2014DB] FROM  DISK = N'D:\_BACKUP\Kurs2014DB.bak' WITH  FILE = 9,  NORECOVERY,  NOUNLOAD,  STATS = 5
-RESTORE LOG [Kurs2014DB] FROM  DISK = N'D:\_BACKUP\Kurs2014DB.bak' WITH  FILE = 10,  NORECOVERY,  NOUNLOAD,  STATS = 5
-RESTORE LOG [Kurs2014DB] FROM  DISK = N'D:\_BACKUP\Kurs2014DB.bak' WITH  FILE = 11,  NORECOVERY,  NOUNLOAD,  STATS = 5
-RESTORE LOG [Kurs2014DB] FROM  DISK = N'D:\_BACKUP\Kurs2014DB.bak' WITH  FILE = 12,  NOUNLOAD,  STATS = 5
-
-GO
-
+ALTER DATABASE [Northwind] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+BACKUP LOG [Northwind] TO  DISK = N'C:\_SQLBACKUP\Northwind_LogBackup_2023-10-30_11-42-29.bak' WITH NOFORMAT, NOINIT,  NAME = N'Northwind_LogBackup_2023-10-30_11-42-29', NOSKIP, NOREWIND, NOUNLOAD,  NORECOVERY ,  STATS = 5
+RESTORE DATABASE [Northwind] FROM  DISK = N'C:\_SQLBACKUP\Northwind.bak' WITH  FILE = 1,  NORECOVERY,  NOUNLOAD,  REPLACE,  STATS = 5
+RESTORE DATABASE [Northwind] FROM  DISK = N'C:\_SQLBACKUP\Northwind.bak' WITH  FILE = 14,  NORECOVERY,  NOUNLOAD,  STATS = 5
+RESTORE LOG [Northwind] FROM  DISK = N'C:\_SQLBACKUP\Northwind.bak' WITH  FILE = 15,  NORECOVERY,  NOUNLOAD,  STATS = 5
+RESTORE LOG [Northwind] FROM  DISK = N'C:\_SQLBACKUP\Northwind.bak' WITH  FILE = 16,  NORECOVERY,  NOUNLOAD,  STATS = 5
+RESTORE LOG [Northwind] FROM  DISK = N'C:\_SQLBACKUP\Northwind.bak' WITH  FILE = 17,  NORECOVERY,  NOUNLOAD,  STATS = 5
+RESTORE LOG [Northwind] FROM  DISK = N'C:\_SQLBACKUP\Northwind_LogBackup_2023-10-30_11-42-29.bak' WITH  NOUNLOAD,  STATS = 5,  STOPAT = N'2023-10-30T10:59:52'
+ALTER DATABASE [Northwind] SET MULTI_USER
 

@@ -38,8 +38,11 @@ kein Auftrag versendet Mails..!
 
 Grund:
 
-Dem Agent ein Profil zuweisen und Warnungssystem aktiveren--> Eigenschaften des Agent
+Dem Agent ein Profil zuweisen und Warnungssystem aktiveren
+--> Eigenschaften des Agent
+
 Restart des Agent!!
+
 
 --> GAST hat Recht auf öfftl Profil bekommen
 
