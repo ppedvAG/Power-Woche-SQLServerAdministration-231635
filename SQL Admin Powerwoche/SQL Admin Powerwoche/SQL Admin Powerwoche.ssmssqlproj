@@ -79,11 +79,41 @@
           <AssociatedConnUserName />
           <FullPath>11_Backup.sql</FullPath>
         </FileNode>
+        <FileNode Name="11b_Sicherungplan.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11b_Sicherungplan.sql</FullPath>
+        </FileNode>
         <FileNode Name="12_Restore.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>12_Restore.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12b_Besitzverkettung.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>12b_Besitzverkettung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13__Security.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13__Security.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13_Evi.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>13_Evi.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13_Max.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>13_Max.sql</FullPath>
         </FileNode>
         <FileNode Name="13_Snapshot.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
@@ -91,11 +121,35 @@
           <AssociatedConnUserName />
           <FullPath>13_Snapshot.sql</FullPath>
         </FileNode>
+        <FileNode Name="13_VerwaisteUser.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>13_VerwaisteUser.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14_ContainedDB.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14_ContainedDB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14_Proxykonto.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>14_Proxykonto.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_sp_help_revlogin.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_sp_help_revlogin.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

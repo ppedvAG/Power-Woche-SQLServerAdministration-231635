@@ -1,5 +1,5 @@
---Wartuungsplan ist gut für Sicherung geeigent.
---JEde Sicherung wird eine Datei:
+--Wartungsplan ist gut für Sicherung geeigent.
+--Jede Sicherung wird eine Datei:
 --DBname_DatumUhrzeit.bak
 
 
@@ -25,7 +25,8 @@ DB.bak
 jede Sicherung wird eine Datei
 
 
-Bei der Sicherung : kompression aktivieren
+Bei der Sicherung : 
+--Kompression aktivieren
 --Prüfsummen bilden
 --Integritäscheck aktivieren
 --Testen..
