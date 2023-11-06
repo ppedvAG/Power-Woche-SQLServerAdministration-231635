@@ -140,10 +140,16 @@
           <FullPath>14_Proxykonto.sql</FullPath>
         </FileNode>
         <FileNode Name="15_Tools.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15_Tools.sql</FullPath>
+        </FileNode>
+        <FileNode Name="25_Fehlende Indizes.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>15_Tools.sql</FullPath>
+          <FullPath>25_Fehlende Indizes.sql</FullPath>
         </FileNode>
         <FileNode Name="25_Indizes.sql">
           <AssociatedConnectionMoniker />
@@ -151,17 +157,11 @@
           <AssociatedConnUserName />
           <FullPath>25_Indizes.sql</FullPath>
         </FileNode>
-        <FileNode Name="Fehlende Indizes.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>Fehlende Indizes.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="z_Perfmon_Indikatoren.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>z_Perfmon_Indikatoren.sql</FullPath>
         </FileNode>
         <FileNode Name="Z_sp_help_revlogin.sql">
           <AssociatedConnectionMoniker />
@@ -184,7 +184,14 @@
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="PerfmonVorlage.xml">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>PerfmonVorlage.xml</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>
