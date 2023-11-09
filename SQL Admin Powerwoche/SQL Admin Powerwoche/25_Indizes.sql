@@ -2,6 +2,9 @@
 
 INDIZES
 
+NIX1  ID
+NIX2  ID
+
 CLUST IX
 =Tabelle in sortierter Form
 nur 1x pro Tabelle
@@ -14,6 +17,8 @@ NON CLUST IX
 = Kopie von Daten in sortierter Form
 ca 1000 mal Tabelle
 gut bei geringen Resultset (id)
+
+--Vermeide Lookups
 
 --------------------------
 eindeutiger IX
@@ -276,6 +281,65 @@ select * from sys.dm_db_index_usage_stats
 
 
 
+SELECT freight , companyname, productname
+from kundeumsatz
+where employeeid < 5 and city = 'Graz'
+
+
+---Ägy---Alb--ARM--Bel---
+
+set statistics io, time on
+select country, count(*) from kundeumsatz
+group by country
+
+create or alter view vdemo with schemabinding
+as
+select country, count_big(*) as Anzahl from dbo.kundeumsatz
+group by country
+
+select * from vdemo
+
+
+
+
+
+select * into kundeumsatz2 from kundeumsatz
+
+--kundeumsatz2 hat keine Indizes
+--Heap
+
+select top 3 * from kundeumsatz
+--Abfrage: where Aggregate summe /schnitt
+
+
+--NIX_
+select companyname ,productid,count(productid) as Anzahl from kundeumsatz
+where
+		 shipcountry = 'France'
+group by companyname, productid
+order by Anzahl desc
+
+--50ms   900 Seiten optimal
+
+
+--Statistiken sind sehr wichtig um den korrekten Plan einschätzen zu können
+-- Statsiken werden nicht bei jeder Änderung aktualisiert.. evtl geschieht dies zu spät--> falscher Plan..
+
+
+select companyname ,productid,count(productid) as Anzahl from kundeumsatz2
+where
+		 shipcountry = 'France'
+		-- city = 'Graz'
+group by companyname, productid
+order by Anzahl desc
+
+select * into kundeumsatz3 from kundeumsatz
+
+select * from kundeumsatz3 where id = 100 --1
+select * from kundeumsatz3 where customerid = 'ALFKI'--1
+select * from kundeumsatz3 where freight < 1
+
+--20% Änderungen + 500 + Abfrage
 
 
 
@@ -305,3 +369,20 @@ select * from sys.dm_db_index_usage_stats
 
 
 
+
+
+
+
+select companyname, avg(freight), sum(unitprice*quantity) from kundeumsatz
+where
+	freight < 1 and employeeid = 5
+group by Companyname
+	
+
+--gefilterte
+--ind Sichten
+--part Indizes
+--reale hypoth IX
+--Columnstore
+
+--10:55

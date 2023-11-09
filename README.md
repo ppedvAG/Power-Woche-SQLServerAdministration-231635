@@ -12,3 +12,68 @@ KursRepository zu Kurs Power-Woche: SQL Server Administration der ppedv AG
 ### master, model, msdb, tempdb
 ### Sicherung SystemDbs-- Wartungsplan
 
+## DB Settings
+### Startgrößen , Wachstumsraten, Files
+
+## DBObjekte
+### Prozeduren, Sichten , Funktikonen, Diagramm, Tabellen
+
+## Agent
+### Jobs, Zeitpläne, Schritte, Alerts
+### Proxykonten
+
+## DB Email
+
+## Backup
+### Sicherungsarten
+### Recoverymodel
+### Restore
+### Backup Strategie und Plan
+### Snapshot
+### Fallstudien
+
+## Security
+### Login vs User
+### DB Rollen, Schema
+### Serverrollen
+### Besitzverkettung
+
+## Monitoring
+### DMV
+### Datensammler
+### Profiler, Perfmon
+### Indizes, Wartung
+
+## Setup
+### MAXDOP
+
+## DB Settings Optimierung
+### Standardgrößen ändern
+### Berichte der DB
+
+## Seiten und Blöcke
+### Optimierung
+
+## DB Design
+### Datentypen
+### Partitionierung, part Sicht
+### Kompression
+
+## Indizes
+### Varianten
+### Columnstore
+### oiptimalen IX 
+### IX Wartung
+### Statistiken
+
+## Monitoring
+### Auswertung
+
+## Features zur Optimierung
+### ADR
+### Momentaufnahmenisolotation
+
+
+
+
+
