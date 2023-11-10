@@ -169,17 +169,41 @@
           <AssociatedConnUserName />
           <FullPath>25_Indizes.sql</FullPath>
         </FileNode>
-        <FileNode Name="Spieltabelle.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>Spieltabelle.sql</FullPath>
-        </FileNode>
-        <FileNode Name="Statistiken Aktualisierung.sql">
+        <FileNode Name="25_Überflüssige Indizes finden.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Statistiken Aktualisierung.sql</FullPath>
+          <FullPath>25_Überflüssige Indizes finden.sql</FullPath>
+        </FileNode>
+        <FileNode Name="30_ADR_Fill1.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>30_ADR_Fill1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="30_ADR_Fill2.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>30_ADR_Fill2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="30_ADR_SETUP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>30_ADR_SETUP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="31_RessourceGovernor.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>31_RessourceGovernor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="32_Momentaufnahmenisolation.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>32_Momentaufnahmenisolation.sql</FullPath>
         </FileNode>
         <FileNode Name="z_Perfmon_Indikatoren.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
@@ -193,17 +217,23 @@
           <AssociatedConnUserName />
           <FullPath>Z_sp_help_revlogin.sql</FullPath>
         </FileNode>
-        <FileNode Name="Z_SQL Server 2022 Diagnostic Information Queries.sql">
+        <FileNode Name="Z_Spieltabelle.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>Z_SQL Server 2022 Diagnostic Information Queries.sql</FullPath>
+          <FullPath>Z_Spieltabelle.sql</FullPath>
         </FileNode>
-        <FileNode Name="Z_Überflüssige Indizes finden.sql">
+        <FileNode Name="Z_SQL Server 2022 Diagnostic Information Queries.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Z_Überflüssige Indizes finden.sql</FullPath>
+          <FullPath>Z_SQL Server 2022 Diagnostic Information Queries.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Statistiken Aktualisierung.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Z_Statistiken Aktualisierung.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

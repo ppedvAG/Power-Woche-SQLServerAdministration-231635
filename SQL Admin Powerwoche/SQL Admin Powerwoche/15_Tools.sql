@@ -97,6 +97,24 @@ em
 -- lightweight.. aber Auswertung im Vergleich mit Perfmon: no
 
 
+SQLServercentral.com
+
+mssqsltipps.com
+
+Brent Ozar 
+
+sp_blitz
+
+
+Ola Hallengren (Wartungsjob IX STAT)
+
+learn.microsoft.com
+
+GitHub
+
+select * from sys.query_store_query
+
+andreasr@ppedv.de
 
 
 
