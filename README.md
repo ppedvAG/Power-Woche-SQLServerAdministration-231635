@@ -67,11 +67,14 @@ KursRepository zu Kurs Power-Woche: SQL Server Administration der ppedv AG
 ### Statistiken
 
 ## Monitoring
-### Auswertung
+### Auswertung (Profiler Perfmon)
+### XEvents
 
 ## Features zur Optimierung
 ### ADR
 ### Momentaufnahmenisolotation
+### Ressource Governor
+### InMem Tabellen
 
 
 
